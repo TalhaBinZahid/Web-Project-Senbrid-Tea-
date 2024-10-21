@@ -43,171 +43,358 @@
           <li><i class="fas fa-bell"></i></li>
         </ul>
       </nav>
-      <div class="carousel-container">
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../Assests/slider 1.png"
-                class="d-block w-100"
-                style="height: 100vh"
-                alt="..."
-              />
+      <div class="Body">
+        <div class="carousel-container">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../Assests/slider 1.png"
+                  class="d-block w-100"
+                  style="height: 100vh"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Assests/slider 2.png"
+                  class="d-block w-100"
+                  style="height: 100vh"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../Assests/slider.webp"
+                  class="d-block w-100"
+                  style="height: 100vh"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="position-absolute d-flex flex-column"
+                style="top: 170px; left: 150px"
+              >
+                <p class="detials_slider_1 mb-2">SENBIRD TREE</p>
+                <p class="detials_slider_2 mb-3.5 d-flex flex-column">
+                  ELEVATE YOUR <span>TEA EXPERIENCE</span>
+                </p>
+                <button class="detials_slider_3">SHOP NOW</button>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="../Assests/slider 2.png"
-                class="d-block w-100"
-                style="height: 100vh"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../Assests/slider 3.webp"
-                class="d-block w-100"
-                style="height: 100vh"
-                alt="..."
-              />
-            </div>
-            <div
-              class="position-absolute d-flex flex-column"
-              style="top: 170px; left: 150px"
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
             >
-              <p class="detials_slider_1 mb-2">SENBIRD TREE</p>
-              <p class="detials_slider_2 mb-3.5 d-flex flex-column">
-                ELEVATE YOUR <span>TEA EXPERIENCE</span>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="main_card">
+          <div class="Heading">
+            <p class="best_seller">Best Sellers</p>
+          </div>
+          <div class="card_style">
+            <button class="btn prev" onclick="prevCard()">&#10094;</button>
+            <div class="card">
+              <div class="card_inner">
+                <i class="fas fa-star"><p>Best Stock</p> </i>
+                <img src="../Assests/img_1.png" alt="" width="100px" />
+              </div>
+              <div class="card_content">
+                <p class="card_name">MATCHA OTOME</p>
+                <p class="card_detail">抹茶乙女</p>
+                <div class="underline"></div>
+                <p class="price">$40</p>
+                <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card_inner">
+                <i class="fas fa-exclamation-triangle"><p>Low Stock</p></i>
+                <img src="../Assests/img_1.png" alt="" width="100px" />
+              </div>
+              <div class="card_content">
+                <p class="card_name">MATCHA OTOME</p>
+                <p class="card_detail">抹茶乙女</p>
+                <div class="underline"></div>
+                <p class="price">$40</p>
+                <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_inner">
+                <!-- <i class="fas fa-star"> Best Seller</i> -->
+                <img src="../Assests/img_1.png" alt="" width="100px" />
+              </div>
+              <div class="card_content">
+                <p class="card_name">MATCHA OTOME</p>
+                <p class="card_detail">抹茶乙女</p>
+                <div class="underline"></div>
+                <p class="price">$40</p>
+                <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card_inner">
+                <!-- <i class="fas fa-star"> Best Seller</i> -->
+                <img src="../Assests/img_1.png" alt="" width="100px" />
+              </div>
+              <div class="card_content">
+                <p class="card_name">MATCHA OTOME</p>
+                <p class="card_detail">抹茶乙女</p>
+                <div class="underline"></div>
+                <p class="price">$40</p>
+                <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <button class="btn next" onclick="nextCard()">&#10095;</button>
+          </div>
+          <div class="bttn">
+            <button class="detials_slider_3">Shop All</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box_1">
+            <img src="../Assests/add_1.png" alt="" />
+          </div>
+          <div class="box_2">
+            <div class="b_details">
+              <p class="box_p">Reasons to Choose <span>Senbird Tea</span></p>
+              <p class="box_pa">
+                At Senbird Tea, we're not just tea purveyors; we're guardians of
+                a centuries-old tradition and champions of a holistic tea
+                experience. Here's why choosing Senbird Tea is a step towards
+                elevating your tea journey
               </p>
-              <button class="detials_slider_3">SHOP NOW</button>
             </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="main_card">
-        <div class="Heading">
-          <p class="best_seller">Best Sellers</p>
-        </div>
-        <div class="card_style">
-          <button class="btn prev" onclick="prevCard()">&#10094;</button>
-          <div class="card">
-            <div class="card_inner">
-              <i class="fas fa-star"><p>Best Stock</p> </i>
-              <img src="../Assests/img_1.png" alt="" width="100px" />
+            <div class="box_icons">
+              <div class="circle">
+                <img src="../Assests/icon_3.png" alt="" />
+              </div>
+              <div class="circle">
+                <img src="../Assests/icon_1.png" alt="" />
+              </div>
+              <div class="circle">
+                <img src="../Assests/icon_2.png" alt="" />
+              </div>
             </div>
-            <div class="card_content">
-              <p class="card_name">MATCHA OTOME</p>
-              <p class="card_detail">抹茶乙女</p>
-              <div class="underline"></div>
-              <p class="price">$40</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card_inner">
-              <i class="fas fa-exclamation-triangle"><p>Low Stock</p></i>
-              <img src="../Assests/img_1.png" alt="" width="100px" />
-            </div>
-            <div class="card_content">
-              <p class="card_name">MATCHA OTOME</p>
-              <p class="card_detail">抹茶乙女</p>
-              <div class="underline"></div>
-              <p class="price">$40</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_inner">
-              <!-- <i class="fas fa-star"> Best Seller</i> -->
-              <img src="../Assests/img_1.png" alt="" width="100px" />
-            </div>
-            <div class="card_content">
-              <p class="card_name">MATCHA OTOME</p>
-              <p class="card_detail">抹茶乙女</p>
-              <div class="underline"></div>
-              <p class="price">$40</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card_inner">
-              <!-- <i class="fas fa-star"> Best Seller</i> -->
-              <img src="../Assests/img_1.png" alt="" width="100px" />
-            </div>
-            <div class="card_content">
-              <p class="card_name">MATCHA OTOME</p>
-              <p class="card_detail">抹茶乙女</p>
-              <div class="underline"></div>
-              <p class="price">$40</p>
-            </div>
-          </div>
-          <button class="btn next" onclick="nextCard()">&#10095;</button>
-        </div>
-        <div class="bttn">
-          <button class="detials_slider_3">Shop All</button>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box_1">
-          <img src="../Assests/add_1.png" alt="" />
-        </div>
-        <div class="box_2">
-          <div class="b_details">
-            <p class="box_p">Reasons to Choose <span>Senbird Tea</span></p>
-            <p class="box_pa">
-              At Senbird Tea, we're not just tea purveyors; we're guardians of a
-              centuries-old tradition and champions of a holistic tea
-              experience. Here's why choosing Senbird Tea is a step towards
-              elevating your tea journey
+            <p class="icons_details">
+              Explore Our Teas <i class="fas fa-arrow-right"></i>
             </p>
           </div>
-          <div class="box_icons">
-            <div class="circle">
-              <img src="../Assests/icon_3.png" alt="">
+          <div class="box_3">
+            <div class="p_details">
+              <p class="p_1">Health and Wellness Benefits</p>
+              <p class="p_2">Genuinely Authentic</p>
+              <p class="p_2">Eco-Friendly Sustainability</p>
+              <p class="p_2">Diverse Tea Selection</p>
             </div>
-            <div class="circle">
-              <img src="../Assests/icon_1.png" alt="" />
-            </div>
-            <div class="circle">
-              <img src="../Assests/icon_2.png" alt="" />
+            <div class="p_details">
+              <p class="paragraph">
+                Experience the profound health and wellness benefits of our
+                teas. From antioxidants that support vitality to soothing herbal
+                infusions, each cup nurtures a healthy mind, body, and spirit.
+              </p>
+              <button class="detials_slider_3">Learn More</button>
             </div>
           </div>
-          <p class="icons_details">Explore Our Teas <i class="fas fa-arrow-right"></i></p>
+          <div class="box_4">
+            <img src="../Assests/tea_2.png" alt="" />
+          </div>
         </div>
-        <div class="box_3">
-            <div class="p_details">
-                <p class="p_1">Health and Wellness Benefits</p>
-                <p class="p_2">Genuinely Authentic</p>
-                <p class="p_2">Eco-Friendly Sustainability</p>
-                <p class="p_2">Diverse Tea Selection</p>
+        <div class="Subscribe">
+          <div class="Save">
+            <p class="Refillable">Refillable Tea Tins</p>
+            <p class="Subscribe_and_Save">Subscribe and Save</p>
+          </div>
+          <div class="card_main">
+            <div class="main_card_1">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="card_main_p">
+                <p class="card_main_p1">Select Your Tea Tin <span>01</span></p>
+                <p class="card_main_p2">
+                  Explore our organic Japanese green tea and herbal tea
+                  collection
+                </p>
+              </div>
             </div>
-            <div class="p_details">
-                <p class="paragraph">Experience the profound health and wellness benefits of our teas. From antioxidants that support vitality to soothing herbal infusions, each cup nurtures a healthy mind, body, and spirit.</p>
-                <button class="detials_slider_3">Learn More</button>
+            <div class="main_card_1">
+              <img src="../Assests/card_2.png" alt="" />
+              <div class="card_main_p">
+                <p class="card_main_p1">Refill Your Tin <span>02</span></p>
+                <p class="card_main_p2">
+                  Order pouch refills for your tins once you're out of tea
+                </p>
+              </div>
             </div>
+            <div class="main_card_1">
+              <img src="../Assests/card_3.png" alt="" />
+              <div class="card_main_p">
+                <p class="card_main_p1">Subscribe and Save <span>03</span></p>
+                <p class="card_main_p2">
+                  Customize your tea subscription frequency, enjoy savings, and
+                  maintain flexibility.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="detials_slider_3">Refill Now</button>
         </div>
-        <div class="box_4">
-            <img src="../Assests/tea_2.png" alt="">
+        <div class="categories">
+          <p>AS SEEN IN</p>
+          <p>Forbes</p>
+          <p>Mashed</p>
+          <p>TastingTable</p>
+        </div>
+        <div class="Types">
+          <p class="tea_type">Shop By Tea Types</p>
+          <div class="tea_main">
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+            <div class="tea_card">
+              <img src="../Assests/card_1.png" alt="" />
+              <div class="tea_card_details">
+                <p class="tea_card_p">SENCHA</p>
+                <p class="tea_card_p1">
+                  Lorem ipsum dolor sit amet conse etur. Turpis sagittis lectus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="detials_slider_3">View All Teas</button>
+        </div>
+        <div class="Our_Story">
+          <div class="Story_1">
+            <img src="../Assests/person img.png" alt="" />
+          </div>
+          <div class="Story_2">
+            <div class="Story_3">
+              <img src="../Assests/heal inside 2.png" alt="" />
+              <p>
+                Sharing Japan's Essence through Authentic Handcrafted Teas and
+                Time Honored Traditions for a Healthier Mind, Body, and Spirit.
+              </p>
+              <button class="detials_slider_3">Our Story</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <p>
+                "This community is amazing! I love how supportive everyone is."
+              </p>
+              <span>- John Doe</span>
+            </div>
+            <div class="slide">
+              <p>
+                "I have grown so much thanks to the feedback I receive here."
+              </p>
+              <span>- Jane Smith</span>
+            </div>
+            <div class="slide">
+              <p>
+                "The love and encouragement from this community keeps me going."
+              </p>
+              <span>- Michael Brown</span>
+            </div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
       </div>
     </div>
