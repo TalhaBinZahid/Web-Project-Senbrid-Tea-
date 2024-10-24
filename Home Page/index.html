@@ -129,7 +129,7 @@
                 <div class="underline"></div>
                 <p class="price">$40</p>
                 <div class="bttn">
-                    <button class="cart">Add to Cart</button>
+                  <button class="cart">Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                 <div class="underline"></div>
                 <p class="price">$40</p>
                 <div class="bttn">
-                    <button class="cart">Add to Cart</button>
+                  <button class="cart">Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@
                 <div class="underline"></div>
                 <p class="price">$40</p>
                 <div class="bttn">
-                    <button class="cart">Add to Cart</button>
+                  <button class="cart">Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@
                 <div class="underline"></div>
                 <p class="price">$40</p>
                 <div class="bttn">
-                    <button class="cart">Add to Cart</button>
+                  <button class="cart">Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -372,30 +372,125 @@
             </div>
           </div>
         </div>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slide">
-              <p>
-                "This community is amazing! I love how supportive everyone is."
-              </p>
-              <span>- John Doe</span>
+        <section class="feedback-section">
+          <h2 class="mb-4" id="feedback_text">Feedback</h2>
+          <div
+            id="feedbackCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="feedback-card">
+                  <img src="../Assests/sara.jfif" alt="User Photo" />
+                  <h5>Sara Miller</h5>
+                  <p class="text-muted">Tea Enthusiast and Wellness Advocate</p>
+                  <p>
+                    "Senbird Tea has been a delightful discovery. Their commitment to authenticity and quality is evident in every sip. The diverse range of teas caters to all tastes, and the health benefits are a bonus. As a tea lover, I'm proud to be a part of the Senbird community."
+                  </p>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="feedback-card">
+                  <img src="../Assests/john.jfif" alt="User Photo" />
+                  <h5>John Smith</h5>
+                  <p class="text-muted">Tea Connoisseur</p>
+                  <p>
+                    "Greenfield Coffee has been a remarkable find. Their dedication to sourcing the finest beans and maintaining ethical practices shines through in every cup. The rich, bold flavors satisfy even the most discerning coffee enthusiasts, offering a perfect blend for every palate. From smooth, single-origin coffees to robust blends, Greenfield has become my go-to brand for quality coffee."
+                  </p>
+                  <div class="stars">★★★★☆</div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="feedback-card">
+                  <img src="../Assests/sara 2.jfif" alt="User Photo" />
+                  <h5>Sarah Johnson</h5>
+                  <p class="text-muted">Holistic Wellness Advocate</p>
+                  <p>
+                    "As a passionate coffee drinker, I'm thrilled to support a brand that not only values taste but also sustainability. Greenfield’s attention to detail and their commitment to environmentally friendly practices make each sip more enjoyable. It’s a pleasure to indulge in such a premium experience while knowing I’m contributing to a brand that truly cares."
+                  </p>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
             </div>
-            <div class="slide">
-              <p>
-                "I have grown so much thanks to the feedback I receive here."
-              </p>
-              <span>- Jane Smith</span>
-            </div>
-            <div class="slide">
-              <p>
-                "The love and encouragement from this community keeps me going."
-              </p>
-              <span>- Michael Brown</span>
-            </div>
+
+            <!-- Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#feedbackCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
+        </section>
+        <footer>
+            <div class="empty_space"></div>
+            <div class="footer_sectiom">
+                <div class="footer_logo">
+                    <img src="../Assests/logo.png" alt="">
+                    <p class="footer_logo_p">Senbird Tea offers authentic Japanese teas, sourced sustainably from small farms, promoting both wellness and tradition. Each tea provides a mindful, high-quality experience rooted in Japanese culture.</p>
+                </div>
+                <div class="footer_details">
+                    <ul>
+                        <li class="first_element">Company</li>
+                        <li class="element">Contact</li>
+                        <li class="element">Blog</li>
+                        <li class="element">Digital</li>
+                        <li class="element">FAQs</li>
+                    </ul>
+                </div>
+                <div class="footer_details">
+                    <ul>
+                        <li class="first_element">Support</li>
+                        <li class="element">Privacy</li>
+                        <li class="element">Term & Condition</li>
+                        <li class="element">Shipping & Returns</li>
+                    </ul>
+                </div>
+                <div class="footer_details_1">
+                    <p class="first_element">Follow</p>
+                    <div class="footer_icons">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>                
+                    </div>
+                </div>
+            </div>
+            <div class="footer_end">
+                <span class="line"></span>
+                <p>© 2023 Senbird Tea. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
       </div>
     </div>
   </body>
