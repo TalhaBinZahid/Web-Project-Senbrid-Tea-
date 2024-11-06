@@ -136,6 +136,16 @@ h1, h2, h3 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.user-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* User List Table */
 .user-list table {
     width: 100%;
@@ -143,6 +153,7 @@ h1, h2, h3 {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    
 }
 
 .user-list th,

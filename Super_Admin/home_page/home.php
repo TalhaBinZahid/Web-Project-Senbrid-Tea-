@@ -1,4 +1,5 @@
 <?php
+include '../Login/session.php';
 $conn = mysqli_connect("localhost", "root", "", "senbrid-tea");
 
 if (!$conn) {
@@ -100,11 +101,10 @@ window.onload = function() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Admin Panel</title>
-    <link rel="stylesheet" href="../home_page/index.css">
+    <link rel="stylesheet" href="../home_page/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <div class="admin-panel">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -112,8 +112,8 @@ window.onload = function() {
         <ul>
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#user-management">User Management</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="">Sign-out</a></li>
+            <li><a href="../../User/Home Page/index.html">Home Page</a></li>
+           <li><a href="../Login/signout.php" onclick="return confirm('Are you sure you want to sign out?');">Sign-out</a></li>
         </ul>
     </aside>
 
@@ -121,11 +121,7 @@ window.onload = function() {
     <div class="main-content">
         <!-- Top Bar -->
         <header class="top-bar">
-            <h1>Welcome Abdullah</h1>
-            <div class="search">
-                <input type="text" placeholder="Search users...">
-                <button>Search</button>
-            </div>
+            <h1>Welcome Admin</h1>
         </header>
 
         <!-- User Management Section -->
@@ -135,7 +131,7 @@ window.onload = function() {
             <div class="add-user-form">
                 <h3><?php echo !empty($userData) ? "Edit User" : "Add New User"; ?></h3>
                 <form action="home.php" method="POST" id="registrationForm">
-                    <input type="hidden" name="userId" value="<?php echo !empty($userData) ? ($userData['id']) : ''; ?>">
+                    <input type="hidden" name="userId" id="userId" value="<?php echo !empty($userData) ? ($userData['id']) : ''; ?>">
                     <input type="text" name="userName" id="username" placeholder="Username" value="<?php echo !empty($userData) ? ($userData['userName']) : ''; ?>" required>
                     <small class="error" id="usernameError"></small>
                     <input type="email" name="email" id="email" placeholder="Email" value="<?php echo !empty($userData) ? ($userData['email']) : ''; ?>" required>
@@ -143,7 +139,7 @@ window.onload = function() {
                     <input type="text" name="role" id="role" placeholder="Role" value="<?php echo !empty($userData) ? ($userData['role']) : ''; ?>" required>
                     <small class="error" id="roleError"></small>
                     <input type="password" name="password" id="password" placeholder="New Password (leave blank to keep current)">
-                    <small class="error" id="passwordError"></small>
+                       <small class="error" id="passwordError"></small>
                     <button type="submit" name="submit"><?php echo !empty($userData) ? "Update User" : "Add User"; ?></button>
                 </form>
             </div>
@@ -187,6 +183,7 @@ window.onload = function() {
         </section>
     </div>
 </div>
+<script src="../home_page/home.js"></script>
 
 </body>
 </html>

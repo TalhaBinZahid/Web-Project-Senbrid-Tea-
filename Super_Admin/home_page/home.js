@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("registrationForm");
+    const userId = document.getElementById("userId").value; 
     const username = document.getElementById("username");
     const email = document.getElementById("email");
     const role = document.getElementById("role");
@@ -62,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function validatePassword() {
-        if (password.value.trim() === "" || password.value.length < 8) {
-            passwordError.textContent = "Password must be at least 8 characters long";
+        if (!userId && (password.value.trim() === "" || password.value.length < 6)){
+            passwordError.textContent = "Password must be at least 6 characters long";
             password.classList.add("invalid");
             return false;
         } else {
@@ -74,3 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+function confirmSignOut() {
+    // Display confirmation dialog
+    var result = confirm("Are you sure you want to sign out?");
+    if (result) {
+        // If the user clicks "OK", redirect to the logout page
+        window.location.href = '../Login/login.php'; // Change this to your logout URL
+    }
+    // If the user clicks "Cancel", do nothing (the function returns false)
+    return false;
+}
