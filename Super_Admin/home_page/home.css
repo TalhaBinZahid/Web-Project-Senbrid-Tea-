@@ -127,7 +127,6 @@ h1, h2, h3 {
     border-radius: 10px 2px;
     cursor: pointer;
     box-shadow: none;
-    transition: background 0.3s ease;
     transition: box-shadow 0.3s ease;
 }
 
