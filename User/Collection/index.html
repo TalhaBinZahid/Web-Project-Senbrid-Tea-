@@ -1,89 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collection</title>
-  <!-- <link rel="stylesheet" href="../Collection/index.css"> -->
-  <script src="../navbar_and_Footer/index.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+    <link rel="stylesheet" href="../Collection/index.css" />
+    <link rel="stylesheet" href="../Home Page/index.css" />
+    <script src="../navbar_and_Footer/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <div id="nav-and-div-placeholder"></div>
     <main>
-      <div>
-        <div>
-          <img src="../../Assests/2nd page.png" alt="" width="100%">
+      <div class="main">
+        <div class="image-container">
+          <img src="../../Assests/2nd page.png" alt="Tea Shop" />
           <p>TEA SHOP <span>ORGANIC JAPANESE TEA</span></p>
         </div>
-        <div>
-          <div>
-            <div>
-              <p>FILTER ITEMS</p>
+        <div class="main_containner">
+          <div class="sidebar">
+            <!-- Filter Header -->
+            <div class="filter-header">
+              <h3>FILTER ITEMS</h3>
               <span class="line"></span>
             </div>
-            <div>
-              <p>SHOP ALL</p>
+
+            <!-- Shop All Section -->
+            <div class="filter-section">
+              <h4>SHOP ALL</h4>
               <label>
-                <input type="checkbox" name="" value="yes"> In Stock
-              </label><br>
+                <input type="checkbox" name="inStock" value="yes" /> In Stock
+              </label>
               <label>
-                <input type="checkbox" name="" value="yes"> Best Seller
+                <input type="checkbox" name="bestSeller" value="yes" /> Best
+                Seller
               </label>
             </div>
-            <div>
-              <p>GREEN TEA</p>
+
+            <!-- Green Tea Section -->
+            <div class="filter-section">
+              <h4>GREEN TEA</h4>
               <label>
-                <input type="checkbox" name="" value="yes"> Sencha
-              </label><br>
-              <label>
-                <input type="checkbox" name="" value="yes"> Genmaicha
+                <input type="checkbox" name="greenTea[]" value="Sencha" />
+                Sencha
               </label>
               <label>
-                <input type="checkbox" name="" value="yes"> Hojicha
-              </label><br>
-              <label>
-                <input type="checkbox" name="" value="yes"> Gyokuro
+                <input type="checkbox" name="greenTea[]" value="Genmaicha" />
+                Genmaicha
               </label>
               <label>
-                <input type="checkbox" name="" value="yes"> Matcha
-              </label><br>
-            </div>
-            <div>
-              <p>HERBAL TEA</p>
-              <label>
-                <input type="checkbox" name="" value="yes"> Mugicha
-              </label><br>
-              <label>
-                <input type="checkbox" name="" value="yes"> Sobacha
+                <input type="checkbox" name="greenTea[]" value="Hojicha" />
+                Hojicha
               </label>
               <label>
-                <input type="checkbox" name="" value="yes"> Kuromamecha
+                <input type="checkbox" name="greenTea[]" value="Gyokuro" />
+                Gyokuro
+              </label>
+              <label>
+                <input type="checkbox" name="greenTea[]" value="Matcha" />
+                Matcha
               </label>
             </div>
-            <div>
-              <p>TEA GIFT SETS</p>
+
+            <!-- Herbal Tea Section -->
+            <div class="filter-section">
+              <h4>HERBAL TEA</h4>
+              <label>
+                <input type="checkbox" name="herbalTea[]" value="Mugicha" />
+                Mugicha
+              </label>
+              <label>
+                <input type="checkbox" name="herbalTea[]" value="Sobacha" />
+                Sobacha
+              </label>
+              <label>
+                <input type="checkbox" name="herbalTea[]" value="Kuromamecha" />
+                Kuromamecha
+              </label>
               <span class="line"></span>
             </div>
-            <div>
-              <div class="container">
-                <h2>Select Price Range</h2>
-                <div class="slider-container">
-                    <input type="range" id="minRange" class="range-slider" min="0" max="1000" value="200">
-                    <input type="range" id="maxRange" class="range-slider" min="0" max="1000" value="800">
-                </div>
-                <div class="price-output">
-                    $<span id="minPrice">200</span> - $<span id="maxPrice">800</span>
-                </div>
+
+            <!-- Price Range Section -->
+            <div class="filter-section price-filter">
+              <h4>Select Price Range</h4>
+              <label for="minPrice">Min Price:</label>
+              <input
+                type="number"
+                id="minPrice"
+                name="minPrice"
+                placeholder="0"
+                step="1"
+              />
+
+              <label for="maxPrice">Max Price:</label>
+              <input
+                type="number"
+                id="maxPrice"
+                name="maxPrice"
+                placeholder="1000"
+                step="1"
+              />
             </div>
-  
-            </div>
-            
-          
-            
+
+            <!-- Submit Button -->
+            <div class="filter-section">
+              <button type="submit" class="filter-submit-button">
+                Apply Filters
+              </button>
             </div>
           </div>
+          <div class="main-content main_content">
+            <div class="paragraphs">
+              <p>There are 568 products in this category</p>
+            </div>
+            <div class="card_style card_styles">
+              <div class="card cards">
+                <div class="card_inner">
+                  <i class="fas fa-star"><p>Best Stock</p></i>
+                  <img src="../../Assests/img_1.png" alt="" width="100px" />
+                </div>
+                <div class="card_content">
+                  <p class="card_name">MATCHA OTOME</p>
+                  <p class="card_detail">抹茶乙女</p>
+                  <div class="underline"></div>
+                  <p class="price">$40</p>
+                  <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card cards" >
+                <div class="card_inner">
+                  <i class="fas fa-exclamation-triangle"><p>Low Stock</p></i>
+                  <img src="../../Assests/img_1.png" alt="" width="100px" />
+                </div>
+                <div class="card_content">
+                  <p class="card_name">MATCHA OTOME</p>
+                  <p class="card_detail">抹茶乙女</p>
+                  <div class="underline"></div>
+                  <p class="price">$40</p>
+                  <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card cards">
+                <div class="card_inner">
+                  <img src="../../Assests/img_1.png" alt="" width="100px" />
+                </div>
+                <div class="card_content">
+                  <p class="card_name">MATCHA OTOME</p>
+                  <p class="card_detail">抹茶乙女</p>
+                  <div class="underline"></div>
+                  <p class="price">$40</p>
+                  <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card cards">
+                <div class="card_inner">
+                  <i class="fas fa-star"><p>Best Stock</p></i>
+                  <img src="../../Assests/img_1.png" alt="" width="100px" />
+                </div>
+                <div class="card_content">
+                  <p class="card_name">MATCHA OTOME</p>
+                  <p class="card_detail">抹茶乙女</p>
+                  <div class="underline"></div>
+                  <p class="price">$40</p>
+                  <div class="bttn">
+                    <button class="cart">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer-placeholder"></div>
       </div>
     </main>
-    <div id="footer-placeholder"></div>
-</body>
+  </body>
 </html>

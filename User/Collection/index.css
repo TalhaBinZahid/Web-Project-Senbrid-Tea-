@@ -2,3 +2,180 @@ body{
     margin: 0%;
     padding: 0%;
 }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust this to your desired width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.image-container p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(7, 7, 7); /* Adjust based on the image background */
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 0.175em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.image-container p span {
+    display: block;
+    font-family: Roboto Condensed;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 59.64px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* General Sidebar Styling */
+.main_containner{
+    display: flex;
+    gap: 40px;
+}
+
+.sidebar {
+    width: 20%;
+    background: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Filter Header */
+.filter-header {
+    text-align: center;
+}
+
+.filter-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.line {
+    display: block;
+    height: 2px;
+    background: #d35858;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Filter Section Titles */
+.filter-section h4 {
+    font-size: 1.2rem;
+    color: #d35858;
+    margin-bottom: 10px;
+}
+
+/* Checkbox Labels */
+.filter-section label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.filter-section input[type="checkbox"] {
+    accent-color: #d35858;
+    cursor: pointer;
+}
+
+/* Price Filter Inputs */
+.price-filter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+.filter-submit-button {
+    width: 100%;
+    padding: 10px;
+    background: #34db8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.filter-submit-button:hover {
+    background: #b34646;
+}
+
+/* Section Gaps and Alignment */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.paragraphs{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16.99px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+.main_content{
+    max-width: 75%;
+}
+
+
+.card_styles{
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: calc(33.33% - 20px);
+}

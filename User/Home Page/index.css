@@ -115,12 +115,10 @@
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 4%;
-    border-radius: 10px 2px;
+    border-radius: 8px;
 }
 
-
-
-.main_card{
+.main_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,58 +126,59 @@
     width: 90%;
     margin: 0 auto;
     overflow: auto;
-}
-
-.card_style{
+  }
+  
+  .card_style {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space out cards more evenly */
     align-items: center;
     gap: 20px;
-}
-
-.Heading{
+    width: 100%; /* Ensure it uses the full width */
+  }
+  
+  .Heading {
     display: flex;
     justify-content: center;
-}
-
-.best_seller{
+  }
+  
+  .best_seller {
     font-weight: 700;
-    font-family:'Roboto Condensed';
+    font-family: 'Roboto Condensed';
     font-size: 40px;
     line-height: 42.6px;
     letter-spacing: 2%;
     margin: 0%;
     padding: 0%;
-}
-
-.card{
-    width: 500px;
+  }
+  
+  .card {
+    width: 30%; /* Adjust to ensure the cards take up equal space */
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
-}
-
-.card_inner img{
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card_inner img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-.card_inner{
+  }
+  
+  .card_inner {
     position: relative;
-    display: inline-block;
-}
-
-.card_inner i{
+    /* display: inline-block; */
+  }
+  
+  .card_inner i {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -188,24 +187,24 @@
     font-weight: 700;
     color: #DC2626;
     font-size: 15px;
-}
-
-.card_inner p{
+  }
+  
+  .card_inner p {
     color: #000000;
-    font-family:'Roboto Condensed';
+    font-family: 'Roboto Condensed';
     font-size: 15px;
     font-weight: 700;
     margin: 0%;
-}
-
-.card_content{
+  }
+  
+  .card_content {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-}
-
-.card_name{
+  }
+  
+  .card_name {
     margin: 0%;
     padding: 0%;
     font-family: 'Roboto Condensed';
@@ -213,9 +212,9 @@
     font-size: 19px;
     line-height: 22.7px;
     letter-spacing: 2%;
-}
-
-.card_detail{
+  }
+  
+  .card_detail {
     margin: 0%;
     padding: 0%;
     font-family: 'Noto Sans';
@@ -223,15 +222,18 @@
     font-size: 15px;
     line-height: 20.43px;
     letter-spacing: 2%;
-}
-
-.underline{
-    width: 50px; 
+  }
+  
+  .underline {
+    width: 50px;
     height: 2px;
-    background-color: green;
-}
-
-.price{
+    display: block;
+    height: 2px;
+    background: #d35858;
+    border: 1px solid #727272
+  }
+  
+  .price {
     margin: 0%;
     padding: 0%;
     font-family: 'Noto Sans';
@@ -239,26 +241,26 @@
     font-size: 15px;
     line-height: 20.43px;
     letter-spacing: 2%;
-}
-
-.bttn{
+  }
+  
+  .bttn {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.cart{
-    width: 100px;
+  }
+  
+  .cart {
+    width: 120px;
     height: 50px;
-    border-radius: 10px 2px;
-    background-color: #000000;
+    border-radius: 8px;
+    background-color: #34db8d;
     color: #F7F7F7;
     border: none;
     font-family: 'Roboto Condensed';
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-}
+  }
 
 .box{
     overflow: hidden;
